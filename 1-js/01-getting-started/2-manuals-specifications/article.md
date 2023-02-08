@@ -1,27 +1,30 @@
 
-# Manuals and specifications
+# دستاویزات اور وضاحتیں
 
-This book is a *tutorial*. It aims to help you gradually learn the language. But once you're familiar with the basics, you'll need other sources.
+یہ کتاب ایک *ٹیوٹورئل* ہے۔ اس کا مقصد آپ کو آہستہ آہستہ زبان سیکھنے میں مدد کرنا ہے۔ لیکن ایک بار جب آپ بنیادی باتوں سے واقف ہو جائیں تو آپ کو دوسرے ذرائع کی ضرورت ہوگی۔
 
-## Specification
+## وضاحت
 
-[The ECMA-262 specification](https://www.ecma-international.org/publications/standards/Ecma-262.htm) contains the most in-depth, detailed and formalized information about JavaScript. It defines the language.
+[ECMA-262 وضاحت](https://www.ecma-international.org/publications/standards/Ecma-262.htm) جاوا اسکرپٹ کے بارے میں سب سے زیادہ گہرائی، تفصیلی اور رسمی معلومات پر مشتمل ہے۔ یہ زبان کی وضاحت کرتا ہے۔
 
-But being that formalized, it's difficult to understand at first. So if you need the most trustworthy source of information about the language details, the specification is the right place. But it's not for everyday use.
+لیکن رسمی ہونے کی وجہ سے اسے شروع میں سمجھنا مشکل ہے۔ لہذا اگر آپ کو زبان کی تفصیلات کے بارے میں معلومات کے سب سے زیادہ قابل اعتماد ذریعہ کی ضرورت ہے، تو آپ بالکل صحیح جگہ پر آئے ہیں۔ لیکن یہ تیوٹورئل روزمرہ کے استعمال کے لیے نہیں ہے۔
 
-A new specification version is released every year. In-between these releases, the latest specification draft is at <https://tc39.es/ecma262/>.
+ایک نیا تفصیلاتی ورژن ہر سال جاری کیا جاتا ہے۔
+ان ریلیز کے درمیان، تازہ ترین تفصیلات کا مسودہ <https://tc39.es/ecma262> میں ہے۔
 
-To read about new bleeding-edge features, including those that are "almost standard" (so-called "stage 3"), see proposals at <https://github.com/tc39/proposals>.
+انتہائی نئی خصوصیات کے بارے میں پڑھنے کے لیے، بشمول وہ جو "تقریباً معیاری" ہیں (نام نہاد "مرحلہ 3")، <https://github.com/tc39/proposals> میں تجاویز دیکھیں۔
 
-Also, if you're developing for the browser, then there are other specifications covered in the [second part](info:browser-environment) of the tutorial.
+اس کے علاوہ، اگر آپ براؤزرز کے لیے کام کر رہے ہیں، تو ٹیوٹوریل کے [دوسرے حصے میں](info:browser-environment) دیگر وضاحتیں شامل ہیں۔
 
-## Manuals
+## دستورالعمل
 
 - **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
 
-    One can find it at <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>.
+- **MDN )موزیلا( جاواسکرپٹ ڈاکیومنٹ** مثالوں اور دوسری تفصیلات کے ساتھ ایک بنیادی دستاویز ہے۔
 
-Although, it's often best to use an internet search instead. Just use "MDN [term]" in the query, e.g. <https://google.com/search?q=MDN+parseInt> to search for `parseInt` function.
+    آپ اسے ہیاں دیکھ سکتے ہیں: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>
+
+اگرچہ، اکثر بہتر ہوتا ہے کہ آپ انٹرنیٹ پر ہی سرچ کریں۔ استفسار میں "MDN [term]" استعمال کریں، مثال کے طور پر `parseInt` فنکشن کو سرچ کرنے کیلیے آپ  <https://google.com/search?q=MDN+parseInt> استعمال کریں گے۔
 
 ## Compatibility tables
 
