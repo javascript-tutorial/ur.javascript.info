@@ -1,12 +1,12 @@
-# Code editors
+# کوڈ ایڈیٹرز
 
-A code editor is the place where programmers spend most of their time.
+کوڈ ایڈیٹر وہ جگہ ہے جہاں پروگرامرز اپنا سب سے زیادہ وقت گزارتے ہیں۔
 
-There are two main types of code editors: IDEs and lightweight editors. Many people use one tool of each type.
+کوڈ ایڈیٹرز کی دو بڑی اقسام ہیں: آئی ڈی ای (IDE) اور لائٹ ویٹ ایڈیٹرز۔ بہت سے لوگ ان دونوں میں سے کوئی ایک قسم استعمال کرتے ہیں۔
 
-## IDE
+## آئی ڈی ای (IDE)
 
-The term [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) refers to a powerful editor with many features that usually operates on a "whole project." As the name suggests, it's not just an editor, but a full-scale "development environment."
+اصطلاح [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) سے مراد ایک پاورفل ایڈیٹر ہے جس میں بہت سارے فیچرز موجود ہوتے ہیں جو کہ عام طور پر پورے پراجیکٹ پر آپریٹ کرتا ہے۔ جیسے کے نام پتہ چلتا ہے، یہ ایک ایڈیٹر نہیں بلکہ ایک مکمل ڈیویلپمنٹ انوائرنمنٹ ہے۔
 
 An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
 
@@ -19,11 +19,11 @@ For Windows, there's also "Visual Studio", not to be confused with "Visual Studi
 
 Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
 
-## Lightweight editors
+## لائٹ ویٹ ایڈیٹرز
 
-"Lightweight editors" are not as powerful as IDEs, but they're fast, elegant and simple.
+"لائٹ ویٹ ایڈیٹرز" آئی ڈی ای (IDEs) جتنے پاورفل نہیں ہوتے لیکن یہ سادہ، خوبصورت اور تیز ہیں۔
 
-They are mainly used to open and edit a file instantly.
+یہ بنیادی طور پر کسی فائل کو فل فور ایڈٹ کرنے کیلیے استعمال ہوتے ہیں۔
 
 The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
 
@@ -36,10 +36,10 @@ The following options deserve your attention:
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
 - [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
 
-## Let's not argue
+## چلیں بحث میں نہیں پڑتے
 
-The editors in the lists above are those that either I or my friends whom I consider good developers have been using for a long time and are happy with.
+مندرجہ بالا لسٹ میں موجود ایڈیٹرز یا تو میں خود استعمال کرتا ہوں یا میرے وہ دوست جنہیں میں اچھے پروگرامرز سمجھتا ہوں ایک عرصے سے استعمال کر رہیں ہیں اور ان کے ساتھ خوش ہیں۔
 
-There are other great editors in our big world. Please choose the one you like the most.
+ہماری بڑی دنیا میں اور بھی عظیم ایڈیٹرز موجود ہیں۔ برائے مہربانی آپ اس کا انتخاب کیجیے جو آپ کا انتہائی پسندیدہ ہو۔
 
-The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+ایک ایڈیٹر کا انتخاب، کسی بھی دوسرے اوزار کی طرح فرد کی عادات، ذاتی ترجیحات اور پراجیکٹ پر منحصر ہوتا ہے۔
