@@ -18,23 +18,21 @@
 
 ## دستورالعمل
 
-- **MDN (Mozilla) JavaScript Reference** is the main manual with examples and other information. It's great to get in-depth information about individual language functions, methods etc.
-
 - **MDN )موزیلا( جاواسکرپٹ ڈاکیومنٹ** مثالوں اور دوسری تفصیلات کے ساتھ ایک بنیادی دستاویز ہے۔
 
     آپ اسے ہیاں دیکھ سکتے ہیں: <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference>
 
 اگرچہ، اکثر بہتر ہوتا ہے کہ آپ انٹرنیٹ پر ہی سرچ کریں۔ استفسار میں "MDN [term]" استعمال کریں، مثال کے طور پر `parseInt` فنکشن کو سرچ کرنے کیلیے آپ  <https://google.com/search?q=MDN+parseInt> استعمال کریں گے۔
 
-## Compatibility tables
+## مطابقت کے ٹیبلز
 
-JavaScript is a developing language, new features get added regularly.
+جاواسکرپٹ ایک ترقی پذیر زبان ہے، اس میں نئے فیچرز روزانہ کی بنیادوں پر ڈالے جا رہے ہیں۔
 
-To see their support among browser-based and other engines, see:
+مختلف براوؑزرز میں ان فیچرز کی سپورٹ دیکھنے کیلیے دیکھیں:
 
-- <http://caniuse.com> - per-feature tables of support, e.g. to see which engines support modern cryptography functions: <http://caniuse.com/#feat=cryptography>.
-- <https://kangax.github.io/compat-table> - a table with language features and engines that support those or don't support.
+- کسی فیچر کی سپورٹ کیلیے <http://caniuse.com> کو دیکھیں۔ مثال کے طور پر یہ دیکھنے کیلیے کہ کونسے انجن جدید کرپٹوگرافی کے فنکشنز کو سپورٹ کرتے ہیں یہ ڈاکیومنٹ دیکھیں: <http://caniuse.com/#feat=cryptography>
+- کونسے انجن کونسے فیچرز کو سپورٹ کرتے ہیں یا نہیں کرتے دیکھنے کیلیے دیکھیں: <https://kangax.github.io/compat-table>
 
-All these resources are useful in real-life development, as they contain valuable information about language details, their support etc.
+یہ تمام دستاویزات حقیقی دنیا میں استعمال کیلیے مفید ہیں کیونکہ ان میں زبان کی تفصیلات اور سپورٹ وغیرہ کے بارے بہت سی معلومات موجود ہیں۔
 
-Please remember them (or this page) for the cases when you need in-depth information about a particular feature.
+برائے مہربانی انہیں (یا اس پیج) کو یاد رکھیے تا کہ کسی خاص فیچر کے گہرائی میں مطالعہ کیلیے آپ انہیں پڑھ سکیں۔
