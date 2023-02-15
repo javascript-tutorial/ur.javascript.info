@@ -8,16 +8,16 @@
 
 اصطلاح [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) (Integrated Development Environment) سے مراد ایک پاورفل ایڈیٹر ہے جس میں بہت سارے فیچرز موجود ہوتے ہیں جو کہ عام طور پر پورے پراجیکٹ پر آپریٹ کرتا ہے۔ جیسے کے نام پتہ چلتا ہے، یہ ایک ایڈیٹر نہیں بلکہ ایک مکمل ڈیویلپمنٹ انوائرنمنٹ ہے۔
 
-An IDE loads the project (which can be many files), allows navigation between files, provides autocompletion based on the whole project (not just the open file), and integrates with a version management system (like [git](https://git-scm.com/)), a testing environment, and other "project-level" stuff.
+ایک IDE پراجیکٹ لوڈ کرتا ہے (جس میں بہت سی فائلز ہو سکتی ہیں)، فائلز کے درمیان آنا جانا آسان کرتا ہے، پورے پراجیکٹ کے حساب سے آٹوکمپلیشن دیتا ہے اور ورژن مینیجمنٹ دیتا ہے(جیسے [git](https://git-scm.com/))، ٹیسٹنگ کا ماحول دیتا ہے اور بھی پراجیکٹ لیول کی کافی اشیا مہیا کرتا ہے۔
 
-If you haven't selected an IDE yet, consider the following options:
+اگر آپ نے ابھی تک کسی IDE کا انتخاب نہیں کیا تو نیچے دیے گئے آپشنز کو چیک کیجیے:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
 - [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
 
-For Windows, there's also "Visual Studio", not to be confused with "Visual Studio Code". "Visual Studio" is a paid and mighty Windows-only editor, well-suited for the .NET platform. It's also good at JavaScript. There's also a free version [Visual Studio Community](https://www.visualstudio.com/vs/community/).
+Windows کے لیے "Visual Studio" بھی موجود ہے، اسے "Visual Studio Code" مت سمجھیے۔ "Visual Studio" ایک قیمتی اور پاورفل صرف Windows پر چلنے والا ایڈیٹر ہے جو کہ .Net platform کی ڈویلپمنٹ کے لیے بہترین ہے۔ یہ Javascript کے لیے بھی اچھا ہے۔ Visual Studio کا فری ورژن [Visual Studio Community](https://www.visualstudio.com/vs/community/) بھی موجود ہے۔
 
-Many IDEs are paid, but have a trial period. Their cost is usually negligible compared to a qualified developer's salary, so just choose the best one for you.
+بہت سے IDE قیمتی ہیں لیکن ٹرائل پیریڈ کے ساتھ آتے ہیں۔ ایک قابل انجینئر کی سیلری کے حساب سے ان کی قیمت نہ ہونے کے برابر ہوتی ہے، اس لیے اپنے لیے جو بہترین ہے اس کا انتخاب کیجیے۔
 
 ## لائٹ ویٹ ایڈیٹرز
 
@@ -25,16 +25,16 @@ Many IDEs are paid, but have a trial period. Their cost is usually negligible co
 
 یہ بنیادی طور پر کسی فائل کو فل فور ایڈٹ کرنے کیلیے استعمال ہوتے ہیں۔
 
-The main difference between a "lightweight editor" and an "IDE" is that an IDE works on a project-level, so it loads much more data on start, analyzes the project structure if needed and so on. A lightweight editor is much faster if we need only one file.
+ایک لائٹ ویٹ ایڈیٹر اور IDE میں بنیادی فرق یہ ہے کہ IDE پراجیکٹ لیول پر کام کرتا ہے اس لیے یہ شروع میں کافی سارا ڈیٹا لوڈ کرتا ہے، حسبِ ضرورت پراجیکٹ سٹرکچر کو اینالائز کرتا ہے اور کافی چیزیں۔ لائٹ ویٹ ایڈیٹر بہت تیز ہے اگر ہم نے صرف ایک فائل پر کام کرنا ہو تو۔
 
-In practice, lightweight editors may have a lot of plugins including directory-level syntax analyzers and autocompleters, so there's no strict border between a lightweight editor and an IDE.
+عملی طور پر، لائٹ ویٹ ایڈیٹرز میں ہو سکتا ہے کہ کافی پلگ اِنز ہوں بشمول پراجیکٹ لیول پر سینٹیکس اینالائز کرنا اور کوڈ کمپلیشن کرنا۔ اس طرح بنیادی طور پر لائٹ ویٹ ایڈیٹر اور IDE میں کوئی سخت فرق کرنے والی کوئی لائن نہیں ہے۔
 
-The following options deserve your attention:
+درج ذیل چیزیں آپ کی توجہ کی منتظر ہیں:
 
 - [Atom](https://atom.io/) (cross-platform, free).
 - [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
-- [Vim](http://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+- [Vim](http://www.vim.org/) اور [Emacs](https://www.gnu.org/software/emacs/) بھی اچھے ہیں اگر آپ کو یہ استعمال کرنے آتے ہوں تو۔
 
 ## چلیں بحث میں نہیں پڑتے
 
