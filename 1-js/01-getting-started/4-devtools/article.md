@@ -1,63 +1,63 @@
 # Developer console
 
-Code is prone to errors. You will quite likely make errors... Oh, what am I talking about? You are *absolutely* going to make errors, at least if you're a human, not a [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)).
+کوڈ میں ایررز آ جاتے ہیں۔ آپ بھی لازمی غلطیاں کریں گے۔ یہ میں کیا بات کر رہا ہوں؟ کم از کم اگر آپ [robot](https://en.wikipedia.org/wiki/Bender_(Futurama)) نہیں بلکہ انسان ہیں تو آپ کا کوڈ *لازمی* طور پور ایررز کا شکار ہو گا۔
 
-But in the browser, users don't see errors by default. So, if something goes wrong in the script, we won't see what's broken and can't fix it.
+لیکن براؤزرز میں یوزرز پہلے سے طے شدہ طور پر ایرزرز نہیں دیکھتے۔ تو اگر کچھ غلط ہوتا ہے تو آپ کو پتا نہیں چلے گا کہ کیا ہوا اور آپ اسے ٹھیک نہیں کر پائیں گے۔
 
-To see errors and get a lot of other useful information about scripts, "developer tools" have been embedded in browsers.
+ایررز کو دیکھنے اور سکرپٹس کے بارے اور بھی بہت مفید معلومات حاصل کرنے کیلیے براؤزرز میں "developer tools" شامل ہوتے ہیں۔
 
-Most developers lean towards Chrome or Firefox for development because those browsers have the best developer tools. Other browsers also provide developer tools, sometimes with special features, but are usually playing "catch-up" to Chrome or Firefox. So most developers have a "favorite" browser and switch to others if a problem is browser-specific.
+زیادہ تر ڈویلپرز Chrome یا Firefox کی طرف مائل ہوتے ہیں کیونکہ ان میں بہترین developer tools موجود ہیں۔ دوسرے براؤزرز میں بھی developer tools موجود ہوتے ہیں بلکہ ان میں کچھ سپیشل فیچرز بھی ہوتے ہیں لیکن زیادہ تر یہ Chrome اور Firefox کو کاپی کرنے کی ہی کوشش کر رہے ہوتے ہیں۔ اس لیے زیادہ تر ڈویلپرز اپنا پسندیدہ براؤزر ہی استعمال کرتے ہیں اور اگر کسی خاص براؤزر کے متعلقہ مسئلہ حل کرنا ہو تو اس براؤزر کو استعمال کرتے ہیں۔
 
-Developer tools are potent; they have many features. To start, we'll learn how to open them, look at errors, and run JavaScript commands.
+Developer tools پاورفل ہیں؛ ان میں بہت سارے فیچرز ہوتے ہیں۔ شروعاتی طور پر ہم سیکھیں گے کہ انہیں کھولا کس طرح جاتا ہے، ایررز کیسے دیکھے جاتے ہیں اور کچھ Javascript کمانڈز کو بھی چلا کر دیکھیں گے۔
 
 ## Google Chrome
 
-Open the page [bug.html](bug.html).
+دیے گئے ڈاکیومنٹ [bug.html](bug.html) کو کھولیں۔
 
-There's an error in the JavaScript code on it. It's hidden from a regular visitor's eyes, so let's open developer tools to see it.
+اس میں موجود Javascript کوڈ میں ایک ایرر موجود ہے۔ یہ ایک عام وزٹر سے چھپا ہوا ہے، تو چلیں developer tools کھول کر اسے دیکھتے ہیں۔
 
-Press `key:F12` or, if you're on Mac, then `key:Cmd+Opt+J`.
+اسے کھولنے کیلیے`key:F12` کو دبائیں یا اگر آپ Mac پر ہیں تو `key:Cmd+Opt+J` دبائیں۔
 
-The developer tools will open on the Console tab by default.
+بائی ڈیفالٹ، developer console tab پہلے کھلے گا۔
 
-It looks somewhat like this:
+یہ کچھ اس طرح دکھائی دیتا ہے:
 
 ![chrome](chrome.png)
 
-The exact look of developer tools depends on your version of Chrome. It changes from time to time but should be similar.
+اس developer tool کی خاص بناوٹ Chrome کے ورژن پر منحصر ہے۔ یہ وقت کے ساتھ ساتھ بدلتی رہتی ہے لیکن اس سے ملتی جلتی ہی ہو گی۔
 
-- Here we can see the red-colored error message. In this case, the script contains an unknown "lalala" command.
-- On the right, there is a clickable link to the source `bug.html:12` with the line number where the error has occurred.
+- یہاں ہم سرخ رنگ میں ایرر میسج دیکھ سکتے ہیں۔ اس کیس میں، سکرپٹ میں ایک نامعلوم کمانڈ "lalala" موجود ہے۔
+- دائیں طرف، سورس کوڈ `bug.html:12` کی طرف لے جانے والا ایک لنک موجود ہے جس پر کلک کر کے ہم اس لائن پر پہنچ سکتے ہیں جہاں سے یہ ایرر آیا ہے۔
 
-Below the error message, there is a blue `>` symbol. It marks a "command line" where we can type JavaScript commands. Press `key:Enter` to run them.
+ایرر میسج کے نیچے ایک `>` کا ایک نشان موجود ہے۔ یہ "command line" کی نشاندہی کرتا ہے جہاں ہم Javascript کمانڈز لکھ سکتے ہیں۔ `key:Enter` دبا کر ان کمانڈز کو چلایا جا سکتا ہے۔
 
-Now we can see errors, and that's enough for a start. We'll come back to developer tools later and cover debugging more in-depth in the chapter <info:debugging-chrome>.
+اب ہم ایررز دیکھ سکتے ہیں اور آغاز کرنے کیلیے یہ کافی ہے۔ ہم developer tools کی طرف واپس آئیں گے اور چیپٹر <info:debugging-chrome> میں ڈیبگنگ اور ڈویلپر ٹولز کو غور سے دیکھیں گے۔
 
 ```smart header="Multi-line input"
-Usually, when we put a line of code into the console, and then press `key:Enter`, it executes.
+عام طور پر، جب ہم console میں کوڈ کی کوئی لائن لکھ کر `key:Enter` دباتے ہیں تو یہ لائن چل جاتی ہے۔
 
-To insert multiple lines, press `key:Shift+Enter`. This way one can enter long fragments of JavaScript code.
+زیادہ لائنز انسرٹ کرنے کیلیے `key:Shift+Enter` کو دبایا جاتا ہے۔ اس طرح ہم Javascript کوڈ کے بڑے حصے لکھ اور چلا سکتے ہیں۔
 ```
 
 ## Firefox, Edge, and others
 
-Most other browsers use `key:F12` to open developer tools.
+زیادہ تر براؤزرز `key:F12` کے استعمال سے developer tools کو کھولتے ہیں۔
 
-The look & feel of them is quite similar. Once you know how to use one of these tools (you can start with Chrome), you can easily switch to another.
+ان سب کی بناوٹ اور feel تقریباً ایک جیسی ہی ہوتی ہے۔ ایک دفعہ آپ کسی ایک کو چلانا سیکھ جائیں (آپ Chrome سے آغاز کر سکتے ہیں) تو آپ کسی بھی دوسرے کو آسانی سے چلا سکتے ہیں۔
 
 ## Safari
 
-Safari (Mac browser, not supported by Windows/Linux) is a little bit special here. We need to enable the "Develop menu" first.
+براؤزرز Safari (Mac براؤزر، جو کہ Windows/Linux پر موجود نہیں) تھوڑا خاص طریقے سے کام کرتا ہے۔ ہمیں پہلے "Develop menu" میں سے اسے Enable کرنا پڑتا ہے۔
 
-Open Preferences and go to the "Advanced" pane. There's a checkbox at the bottom:
+پریفرینسز (Preferences) کھولیے اور "Advance" pane میں جائیے۔ نیچے ایک checkbox موجود ہے اسے کلک کیجیے۔
 
 ![safari](safari.png)
 
-Now `key:Cmd+Opt+C` can toggle the console. Also, note that the new top menu item named "Develop" has appeared. It has many commands and options.
+اب `key:Cmd+Opt+C` console کو کھول اور بند کر سکتی ہے۔ مزید نوٹ کیجیے کہ ایک نیا مینیو "Develop" بھی آ گیا ہے۔ اس میں بہت سی کمانڈز اور آپشنز موجود ہیں۔
 
 ## Summary
 
-- Developer tools allow us to see errors, run commands, examine variables, and much more.
-- They can be opened with `key:F12` for most browsers on Windows. Chrome for Mac needs `key:Cmd+Opt+J`, Safari: `key:Cmd+Opt+C` (need to enable first).
+- Developer tools ہمیں ایررز دیکھنے، کمانڈز چلانے، ویری ایبلز کا جائزہ لینے اور بہت سی چیزیں کرنے کے قابل بناتے ہیں۔
+- یہ وندوز پر زیادہ تر براؤزرز میں `key:F12` سے کھولے جا سکتے ہیں۔ Mac پر Chrome پر انہیں کھولنے کیلیے `key:Cmd+Opt+J` اور Safari پر کھولنے کیلیے (جسے پہلے این ایبل کرنا پڑتا ہے) `key:Cmd+Opt+C` دبانے کی ضرورت ہوتی ہے۔
 
-Now we have the environment ready. In the next section, we'll get down to JavaScript.
+اب ہمارا environment تیار ہو گیا ہے۔ اگلے سیکشن میں ہم Javascript کی طرف بڑھیں گے۔
