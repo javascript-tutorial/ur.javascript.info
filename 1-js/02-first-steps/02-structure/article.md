@@ -1,69 +1,74 @@
 # Code structure
 
-The first thing we'll study is the building blocks of code.
+پہلی چیز جس کا ہم مطالعہ کریں گے وہ کوڈ کے بنیادی عناصر ہیں۔
 
 ## Statements
 
-Statements are syntax constructs and commands that perform actions.
+بیانات (Statements)
+نحو کی تعمیری اشکال اور کمانڈز ہیں جو عمل انجام دیتے ہیں۔
 
-We've already seen a statement, `alert('Hello, world!')`, which shows the message "Hello, world!".
+ہم نے پہلے ہی ایک بیان دیکھا ہے، `alert('Hello, world!')`، جو پیغام "Hello, world!" کو دکھاتا ہے۔
 
-We can have as many statements in our code as we want. Statements can be separated with a semicolon.
+ہم اپنی کوڈ میں جتنے چاہیں بیانات رکھ سکتے ہیں۔ بیانات کو سیمی کالن کے ساتھ الگ کیا جا سکتا ہے۔
 
-For example, here we split "Hello World" into two alerts:
+مثال کے طور پر، یہاں ہم "Hello World" کو دو الرٹس میں تقسیم کر رہے ہیں:
 
 ```js run no-beautify
-alert('Hello'); alert('World');
+alert("Hello");
+alert("World");
 ```
 
-Usually, statements are written on separate lines to make the code more readable:
+عام طور پر، بیانات کو علیحدہ لائنوں پر لکھا جاتا ہے تاکہ کوڈ کو پڑھنے میں آسانی ہو:
 
 ```js run no-beautify
-alert('Hello');
-alert('World');
+alert("Hello");
+alert("World");
 ```
 
 ## Semicolons [#semicolon]
 
-A semicolon may be omitted in most cases when a line break exists.
+اگر ایک لائن بریک موجود ہو تو زیادہ تر معاملات میں سیمی کالن کو چھوڑا جا سکتا ہے۔
 
-This would also work:
-
-```js run no-beautify
-alert('Hello')
-alert('World')
-```
-
-Here, JavaScript interprets the line break as an "implicit" semicolon. This is called an [automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
-
-**In most cases, a newline implies a semicolon. But "in most cases" does not mean "always"!**
-
-There are cases when a newline does not mean a semicolon. For example:
+یہ بھی کام کرے گا:
 
 ```js run no-beautify
-alert(3 +
-1
-+ 2);
+alert("Hello");
+alert("World");
 ```
 
-The code outputs `6` because JavaScript does not insert semicolons here. It is intuitively obvious that if the line ends with a plus `"+"`, then it is an "incomplete expression", so a semicolon there would be incorrect. And in this case, that works as intended.
+یہاں ( Javascript ), لائن بریک کو "مضمون" سیمیکولن سے تعبیر کرتا ہے۔ اسے کہتے ہیں۔
+[automatic semicolon insertion](https://tc39.github.io/ecma262/#sec-automatic-semicolon-insertion).
 
-**But there are situations where JavaScript "fails" to assume a semicolon where it is really needed.**
+**زیادہ تر معاملات میں، ایک نیا لائن سیمی کالن کو ظاہر کرتا ہے۔ لیکن "زیادہ تر معاملات" کا مطلب "ہمیشہ" نہیں ہوتا!**
 
-Errors which occur in such cases are quite hard to find and fix.
+ایسے معاملات ہوتے ہیں جہاں نیا لائن سیمی کالن کا مطلب نہیں ہوتا۔ مثال کے طور پر :
+
+```js run no-beautify
+alert(3 + 1 + 2);
+```
+
+کوڈ کا نتیجہ 6 ہے کیونکہ جاوا اسکرپٹ یہاں نیم وقفے (semicolon) شامل نہیں کرتی۔ یہ واضح ہے کہ اگر لائن ایک پلس "+" کے ساتھ ختم ہوتی ہے، تو یہ "نامکمل اظہار" ہے، اس لیے وہاں نیم وقفے کا اضافہ غلط ہوگا۔ اور اس صورت میں، یہ درست کام کرتا ہے۔
+
+لیکن ایسے حالات بھی ہیں جہاں جاوا اسکرپٹ کو نیم وقفہ کی ضرورت ہوتی ہے اور وہ اس کا اندازہ نہیں لگا پاتی۔
+
+ایسی صورتوں میں جو غلطیاں ہوتی ہیں وہ تلاش کرنا اور درست کرنا مشکل ہوسکتا ہے
+:
 
 ````smart header="An example of an error"
-If you're curious to see a concrete example of such an error, check this code out:
+اگر آپ ایک غلطی کی ٹھوس مثال دیکھنے کے لیے متجسس ہیں، تو یہ کوڈ دیکھیں:
+
 
 ```js run
-alert("Hello");
+;alert("Hello")
 
-[1, 2].forEach(alert);
+;[1, 2].forEach(alert)
 ```
 
-No need to think about the meaning of the brackets `[]` and `forEach` yet. We'll study them later. For now, just remember the result of running the code: it shows `Hello`, then `1`, then `2`.
+ابھی براکٹس `[]` اور `forEach` کے معنی پر سوچنے کی ضرورت نہیں ہے۔ ہم انہیں بعد میں سیکھیں گے۔ ابھی بس کوڈ چلانے کا نتیجہ یاد رکھیں: یہ `Hello` دکھاتا ہے، پھر `1` اور پھر `2`۔
 
-Now let's remove the semicolon after the `alert`:
+
+اب `alert` کے بعد نیم وقفہ نکالتے ہیں :
+
 
 ```js run no-beautify
 alert("Hello")
@@ -71,85 +76,88 @@ alert("Hello")
 [1, 2].forEach(alert);
 ```
 
-The difference compared to the code above is only one character: the semicolon at the end of the first line is gone.
+اوپر کے کوڈ کے مقابلے میں فرق صرف ایک حرف ہے: پہلی لائن کے آخر میں نیم وقفہ ختم کر دیا گیا ہے۔
 
-If we run this code, only the first `Hello` shows (and there's an error, you may need to open the console to see it). There are no numbers any more.
+اگر ہم اس کوڈ کو چلائیں تو صرف پہلا `Hello` دکھائی دے گا (اور ایک غلطی ہوگی، جسے دیکھنے کے لیے آپ کو کنسول کھولنا پڑسکتا ہے)۔ اب نمبر نہیں دکھتے۔
 
-That's because JavaScript does not assume a semicolon before square brackets `[...]`. So, the code in the last example is treated as a single statement.
+ایسا اس لیے ہے کہ جاوا اسکرپٹ اسکوائر بریکٹ `[...]` سے پہلے نیم وقفہ فرض نہیں کرتی۔ لہذا، آخری مثال میں کوڈ کو ایک واحد اسٹیٹمنٹ کے طور پر لیا جاتا ہے۔
 
-Here's how the engine sees it:
+انجن اسے کچھ یوں دیکھتا ہے:
 
 ```js run no-beautify
 alert("Hello")[1, 2].forEach(alert);
 ```
 
-Looks weird, right? Such merging in this case is just wrong. We need to put a semicolon after `alert` for the code to work correctly.
+یہ عجیب لگتا ہے، ہے نا؟ اس صورت میں اس کا یکجا ہونا درست نہیں ہے۔ ہمیں کوڈ کو صحیح طریقے سے چلانے کے لیے `alert` کے بعد نیم وقفہ رکھنا ہوگا۔
 
-This can happen in other situations also.
+ایسا دوسرے حالات میں بھی ہو سکتا ہے۔
 ````
 
-We recommend putting semicolons between statements even if they are separated by newlines. This rule is widely adopted by the community. Let's note once again -- *it is possible* to leave out semicolons most of the time. But it's safer -- especially for a beginner -- to use them.
+ہم تجویز کرتے ہیں کہ اسٹیٹمنٹس (statements) کے درمیان نیم وقفے لگائیں، چاہے وہ نئی لائنوں سے الگ ہوں۔ یہ اصول کمیونٹی میں وسیع پیمانے پر اپنایا گیا ہے۔ ایک بار پھر نوٹ کریں کہ یہ ممکن ہے کہ زیادہ تر وقت نیم وقفے چھوڑ دیے جائیں۔ لیکن یہ زیادہ محفوظ ہے -- خاص طور پر ایک ابتدائی کے لیے -- کہ انہیں استعمال کریں۔
 
 ## Comments [#code-comments]
 
-As time goes on, programs become more and more complex. It becomes necessary to add *comments* which describe what the code does and why.
+وقت کے ساتھ، پروگرام مزید پیچیدہ ہوتے جاتے ہیں۔ ایسے میں تبصروں کا اضافہ ضروری ہو جاتا ہے جو کوڈ کے مقصد اور وجوہات کو بیان کرتے ہیں۔
 
-Comments can be put into any place of a script. They don't affect its execution because the engine simply ignores them.
+تبصرے اسکرپٹ کے کسی بھی حصے میں ڈالے جا سکتے ہیں۔ ان کا کوڈ کے نفاذ پر کوئی اثر نہیں ہوتا کیونکہ انجن انہیں نظر انداز کر دیتا ہے۔
 
-**One-line comments start with two forward slash characters `//`.**
+**ایک لائن والے تبصرے دو فارورڈ سلیش `// ` سے شروع ہوتے ہیں۔.** 
 
-The rest of the line is a comment. It may occupy a full line of its own or follow a statement.
+لائن کے باقی حصے کو تبصرہ بنا دیا جاتا ہے۔ یہ اپنی لائن میں مکمل طور پر جگہ لے سکتا ہے یا کسی اسٹیٹمنٹ کے بعد آ سکتا ہے۔
 
-Like here:
+جیسے یہاں:
+
 ```js run
-// This comment occupies a line of its own
-alert('Hello');
+// یہ تبصرہ اپنی لائن میں ہے
+;alert("Hello")
 
-alert('World'); // This comment follows the statement
+// یہ تبصرہ اسٹیٹمنٹ کے بعد ہے
+;alert("World")
 ```
 
-**Multiline comments start with a forward slash and an asterisk <code>/&#42;</code> and end with an asterisk and a forward slash <code>&#42;/</code>.**
+کثیر لائن تبصرے فارورڈ سلیش اور اسٹار <code>`*/`</code> سے شروع ہوتے ہیں اور اسٹار اور فارورڈ سلیش <code>`/*`</code> پر ختم ہوتے ہیں۔
 
 Like this:
 
 ```js run
-/* An example with two messages.
-This is a multiline comment.
+/* دو پیغامات کی مثال۔
+یہ ایک کثیر لائن تبصرہ ہے۔
 */
-alert('Hello');
-alert('World');
+;alert("Hello")
+;alert("World")
 ```
 
-The content of comments is ignored, so if we put code inside <code>/&#42; ... &#42;/</code>, it won't execute.
+تبصرے کے مواد کو نظر انداز کیا جاتا ہے، لہذا اگر ہم کوڈ کو <code>/_ ... _/</code> کے اندر ڈالیں تو وہ چلایا نہیں جائے گا۔
 
-Sometimes it can be handy to temporarily disable a part of code:
+کبھی کبھی کوڈ کے کسی حصے کو عارضی طور پر غیر فعال کرنا کارآمد ہو سکتا ہے:
 
 ```js run
-/* Commenting out the code
-alert('Hello');
+/* کوڈ کو تبصرہ میں ڈالنا
+;alert('Hello')
 */
-alert('World');
+;alert("World")
 ```
 
 ```smart header="Use hotkeys!"
-In most editors, a line of code can be commented out by pressing the `key:Ctrl+/` hotkey for a single-line comment and something like `key:Ctrl+Shift+/` -- for multiline comments (select a piece of code and press the hotkey). For Mac, try `key:Cmd` instead of `key:Ctrl` and `key:Option` instead of `key:Shift`.
+زیادہ تر ایڈیٹرز میں، کسی لائن کو `key:Ctrl+/` دباکر ایک لائن تبصرہ میں تبدیل کیا جا سکتا ہے اور `key:Ctrl+Shift+/` جیسا کچھ -- کثیر لائن تبصرے کے لیے (کوڈ کے ایک حصے کو منتخب کریں اور ہاٹکی دبائیں)۔ میک کے لیے، `key:Ctrl` کی جگہ `key:Cmd` اور `key:Shift` کی جگہ `key:Option` آزمائیں۔
+
 ```
 
 ````warn header="Nested comments are not supported!"
-There may not be `/*...*/` inside another `/*...*/`.
+ایک `*/  ..  /*  ` دوسرے `*/  ..  /*  ` کے اندر نہیں ہو سکتا۔
 
-Such code will die with an error:
+ایسا کوڈ غلطی کے ساتھ ختم ہو جائے گا:
 
 ```js run no-beautify
-/*
-  /* nested comment ?!? */
 */
-alert( 'World' );
+     /* نیسٹڈ تبصرہ ؟!? /*
+*/
+;alert( 'World' )
 ```
 ````
 
-Please, don't hesitate to comment your code.
+براہ کرم اپنے کوڈ پر تبصرہ کرنے سے نہ ہچکچائیں۔
 
-Comments increase the overall code footprint, but that's not a problem at all. There are many tools which minify code before publishing to a production server. They remove comments, so they don't appear in the working scripts. Therefore, comments do not have negative effects on production at all.
+تبصرے کوڈ کی مجموعی لمبائی میں اضافہ کرتے ہیں، لیکن یہ کوئی مسئلہ نہیں ہے۔ بہت سے ایسے ٹولز ہیں جو کوڈ کو کم کرتے ہیں تاکہ پروڈکشن سرور پر اپ لوڈ کرنے سے پہلے تبصرے ہٹا دیے جائیں۔ اس طرح تبصرے کام کرنے والے اسکرپٹس میں ظاہر نہیں ہوتے۔ لہذا، تبصرے کا پروڈکشن پر کوئی منفی اثر نہیں ہوتا۔
 
-Later in the tutorial there will be a chapter <info:code-quality> that also explains how to write better comments.
+بعد میں اس ٹیوٹوریل میں ایک باب <info:code-quality> ہوگا جو بہتر تبصرے لکھنے کا طریقہ بھی بیان کرے گا۔
