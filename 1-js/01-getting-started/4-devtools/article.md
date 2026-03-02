@@ -22,7 +22,7 @@ Developer tools پاورفل ہیں؛ ان میں بہت سارے فیچرز ہ�
 
 یہ کچھ اس طرح دکھائی دیتا ہے:
 
-![chrome](chrome.png)
+![chrome](chrome.webp)
 
 اس developer tool کی خاص بناوٹ Chrome کے ورژن پر منحصر ہے۔ یہ وقت کے ساتھ ساتھ بدلتی رہتی ہے لیکن اس سے ملتی جلتی ہی ہو گی۔
 
@@ -49,7 +49,11 @@ Developer tools پاورفل ہیں؛ ان میں بہت سارے فیچرز ہ�
 
 براؤزرز Safari (Mac براؤزر، جو کہ Windows/Linux پر موجود نہیں) تھوڑا خاص طریقے سے کام کرتا ہے۔ ہمیں پہلے "Develop menu" میں سے اسے Enable کرنا پڑتا ہے۔
 
+<<<<<<< HEAD
 پریفرینسز (Preferences) کھولیے اور "Advance" pane میں جائیے۔ نیچے ایک checkbox موجود ہے اسے کلک کیجیے۔
+=======
+Open Settings and go to the "Advanced" pane. There's a checkbox at the bottom:
+>>>>>>> ff804bc19351b72bc5df7766f4b9eb8249a3cb11
 
 ![safari](safari.png)
 
