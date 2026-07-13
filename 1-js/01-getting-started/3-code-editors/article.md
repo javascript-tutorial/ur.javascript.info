@@ -13,7 +13,7 @@
 اگر آپ نے ابھی تک کسی IDE کا انتخاب نہیں کیا تو نیچے دیے گئے آپشنز کو چیک کیجیے:
 
 - [Visual Studio Code](https://code.visualstudio.com/) (cross-platform, free).
-- [WebStorm](http://www.jetbrains.com/webstorm/) (cross-platform, paid).
+- [WebStorm](https://www.jetbrains.com/webstorm/) (cross-platform, paid).
 
 Windows کے لیے "Visual Studio" بھی موجود ہے، اسے "Visual Studio Code" مت سمجھیے۔ "Visual Studio" ایک قیمتی اور پاورفل صرف Windows پر چلنے والا ایڈیٹر ہے جو کہ .Net platform کی ڈویلپمنٹ کے لیے بہترین ہے۔ یہ Javascript کے لیے بھی اچھا ہے۔ Visual Studio کا فری ورژن [Visual Studio Community](https://www.visualstudio.com/vs/community/) بھی موجود ہے۔
 
@@ -29,12 +29,19 @@ Windows کے لیے "Visual Studio" بھی موجود ہے، اسے "Visual Stud
 
 عملی طور پر، لائٹ ویٹ ایڈیٹرز میں ہو سکتا ہے کہ کافی پلگ اِنز ہوں بشمول پراجیکٹ لیول پر سینٹیکس اینالائز کرنا اور کوڈ کمپلیشن کرنا۔ اس طرح بنیادی طور پر لائٹ ویٹ ایڈیٹر اور IDE میں کوئی سخت فرق کرنے والی کوئی لائن نہیں ہے۔
 
+<<<<<<< HEAD
 درج ذیل چیزیں آپ کی توجہ کی منتظر ہیں:
+=======
+There are many options, for instance:
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
-- [Atom](https://atom.io/) (cross-platform, free).
-- [Sublime Text](http://www.sublimetext.com) (cross-platform, shareware).
+- [Sublime Text](https://www.sublimetext.com/) (cross-platform, shareware).
 - [Notepad++](https://notepad-plus-plus.org/) (Windows, free).
+<<<<<<< HEAD
 - [Vim](http://www.vim.org/) اور [Emacs](https://www.gnu.org/software/emacs/) بھی اچھے ہیں اگر آپ کو یہ استعمال کرنے آتے ہوں تو۔
+=======
+- [Vim](https://www.vim.org/) and [Emacs](https://www.gnu.org/software/emacs/) are also cool if you know how to use them.
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
 
 ## چلیں بحث میں نہیں پڑتے
 
@@ -42,4 +49,13 @@ Windows کے لیے "Visual Studio" بھی موجود ہے، اسے "Visual Stud
 
 ہماری بڑی دنیا میں اور بھی عظیم ایڈیٹرز موجود ہیں۔ برائے مہربانی آپ اس کا انتخاب کیجیے جو آپ کا انتہائی پسندیدہ ہو۔
 
+<<<<<<< HEAD
 ایک ایڈیٹر کا انتخاب، کسی بھی دوسرے اوزار کی طرح فرد کی عادات، ذاتی ترجیحات اور پراجیکٹ پر منحصر ہوتا ہے۔
+=======
+The choice of an editor, like any other tool, is individual and depends on your projects, habits, and personal preferences.
+
+The author's personal opinion:
+
+- I'd use [Visual Studio Code](https://code.visualstudio.com/) if I develop mostly frontend.
+- Otherwise, if it's mostly another language/platform and partially frontend, then consider other editors, such as XCode (Mac), Visual Studio (Windows) or Jetbrains family (Webstorm, PHPStorm, RubyMine etc, depending on the language).
+>>>>>>> 52c1e61915bc8970a950a3f59bd845827e49b4bf
